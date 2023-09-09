@@ -1,13 +1,22 @@
-import React, { useState } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import React, { useState } from "react";
+import { tempJavascriptLessons, tempPythonLessons } from "./data";
+import type { Lesson } from "./schema";
 
-const startingTopics = ["JavaScript", "NextJS", "English", "Spanish", "Python"];
-const tempLessons = [
-  {
-    title: "JavaScript 1",
-    description: "This is a description",
-  },
-];
+const startingTopics = ["JavaScript", "Python"];
+const lessons: Record<string, Lesson[]> = {
+  JavaScript: tempJavascriptLessons,
+  Python: tempPythonLessons,
+};
 
 function App() {
   const [topic, setTopics] = useState(() => {
@@ -47,7 +56,20 @@ function App() {
               className="space-y-4"
             >
               <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-                {tab.title}
+                <section>
+                  {lessons[tab.value]?.map((lesson) => (
+                    <Card key={lesson.title}>
+                      <CardHeader>
+                        <CardTitle>{lesson.title}</CardTitle>
+                        <CardDescription>{lesson.description}</CardDescription>
+                      </CardHeader>
+                      {/* <CardContent>{lesson.content}</CardContent> */}
+                      <CardFooter>
+                        <Button>Learn More</Button>
+                      </CardFooter>
+                    </Card>
+                  ))}
+                </section>
               </div>
             </TabsContent>
           ))}
