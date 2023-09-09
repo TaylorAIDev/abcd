@@ -1,5 +1,6 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import {
   Card,
   CardContent,
@@ -8,7 +9,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { tempJavascriptLessons, tempPythonLessons } from "../../data/lessons";
 import type { Lesson } from "./schema";
 import { tempJavascriptChallenges1 } from "@/data/challenges";
@@ -35,6 +36,7 @@ function App() {
   const [selectedLesson, setSelectedLesson] = useState<Lesson>(
     () => lessons[0]
   );
+  const [selectedDoc, setSelectedDoc] = useState<string | undefined>(undefined);
   const handleChange = (value: string) => {
     setTopics((prev) => {
       return prev.map((t) => ({ ...t, active: t.value === value }));
@@ -56,9 +58,13 @@ function App() {
     }
     setSelectedLesson(lessons[index - 1]);
   };
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    alert("Submitted");
+  };
   return (
     <section className="grid grid-cols-1 md:grid-cols-2">
-      <section className="flex-col px-4 py-4">
+      <form className="flex-col px-4 py-4" onSubmit={handleSubmit}>
         <Tabs
           defaultValue={topic[0].value}
           onValueChange={handleChange}
@@ -96,7 +102,10 @@ function App() {
             </TabsContent>
           ))}
         </Tabs>
-      </section>
+        <section className="p-4">
+          <Input></Input>
+        </section>
+      </form>
       <section className="flex-col px-4 py-4">
         <Tabs defaultValue={"Challenge"} className="p-4">
           <TabsList className="">
