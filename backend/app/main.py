@@ -1,10 +1,9 @@
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi import FastAPI
-from pathlib import Path
-import uvicorn
 from mangum import Mangum
-import mistletoe
-import openai
+import uvicorn
+
+from app.api import router
 
 # app config
 app = FastAPI(
@@ -12,7 +11,7 @@ app = FastAPI(
 )
 
 # routes
-# app.include_router(v1.router, prefix="/v1")
+app.include_router(router, prefix="/api")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -21,26 +20,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-
 @app.get("/")
 async def home():
     """General API information."""
-    return {"status": "OK"}
-
-
-def load_lessons():
-    """Temp data"""
-    files = Path("./data").glob("*.md")
-    for file in files:
-        with open(file, "r") as fin:
-            rendered = mistletoe.markdown(fin)
-            # TODO: parse markdown, to JSON
-
-
-@app.get("/lessons")
-async def read_lessons():
-    """Get lessons list."""
-    lessons = []
     return {"status": "OK"}
 
 
