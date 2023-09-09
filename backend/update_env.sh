@@ -1,4 +1,3 @@
-REGION=us-east-1
 NAME=learn-ai-api
 PROFILE=damidev
 TIMEOUT_SEC=8

@@ -1,18 +1,13 @@
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi import FastAPI
+from pathlib import Path
 import uvicorn
-
-# aws
 from mangum import Mangum
-
-# from app import config
-
+import openai
 
 # app config
 app = FastAPI(
     title="API",
-    # docs_url=f"{config.API_ROOT}/docs",
-    # openapi_url=f"{config.API_ROOT}/openapi.json",
 )
 
 # routes
@@ -30,6 +25,18 @@ app.add_middleware(
 async def home():
     """General API information."""
     return {"status": "OK"}
+
+
+def load_lessons():
+    files = Path("./data").glob("*.md")
+
+
+@app.get("/lessons")
+async def lessons():
+    """Get lessons list."""
+    lessons = []
+    return {"status": "OK"}
+
 
 
 # AWS
