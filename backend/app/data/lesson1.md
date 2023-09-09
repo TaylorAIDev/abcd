@@ -1,131 +1,160 @@
-# Lesson 1: Introduction to CSS
+# Spanish Lesson 1: The Basics of Spanish Language
 
-Overview: In this lesson, we introduce students to CSS (Cascading Style Sheets). This web language enables the styling of HTML elements. CSS is critical because it separates the website's design and layout from its content, allowing developers to maintain the two independently. Learners will understand the principle behind CSS and its role in modern web design.
+## Introduction to Spanish
+```js
+let a = "In this lesson, we'll introduce Spanish language basics, including pronunciation, alphabet, and common phrases.";
+```
+### Challenge
+Challenge: How many letters does Spanish language have?
+Answers:
+- A: 26
+- B: 27
+- C: 28
+- D: 30
+Correct:
+- B
 
-Q: What does CSS stand for?
-1) Cumulative Style Sheets
-2) Cascading Style Sheets - Correct
-3) Comprehensive Style Syntax
-4) None of the above
-URLs:
-1. https://www.w3schools.com/css/
-2. https://developer.mozilla.org/en-US/docs/Web/CSS
-3. https://www.tutorialspoint.com/css/index.htm
-4. https://css-tricks.com/
-Lesson 2: CSS Syntax
-Overview: This lesson focuses on CSS syntax. Syntax refers to the rules or format required to write valid CSS. It includes the selection of HTML elements, property, and value. Understanding CSS syntax is necessary for learners to write CSS code that the browser can interpret correctly.
-Q: What is the basic structure of a CSS rule?
-A:
-1) element {property = value}
-2) element (property => value)
-3) selector {property: value} - Correct
-4) selector (property = value)
-URLs:
-1. https://www.w3schools.com/css/css_syntax.asp
-2. https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax
-3. https://www.tutorialrepublic.com/css-tutorial/css-syntax.php
-4. https://css-tricks.com/the-syntax-of-css/
-Lesson 3: CSS Selectors
-Overview: In lesson 3, we delve into CSS selectors. CSS selectors are the means by which we select and manipulate HTML elements. They include elements such as ID, class, and attribute selectors. This lesson is essential as it empowers learners to access and style individual or groups of HTML elements using CSS.
-Q: Name two types of CSS selectors.
-A:
-1) ID selectors and class selectors - Correct
-2) Class selectors and color selectors
-3) Tag Selectors and size selectors
-4) None of the above
-URLs:
-1. https://www.w3schools.com/css/css_selectors.asp
-2. https://www.tutorialspoint.com/css/css_id_class.htm
-3. https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
-4. https://css-tricks.com/almanac/selectors
-Lesson 4: CSS Box Model
-Overview: Lesson 4 introduces learners to the CSS Box Model. The box model is the cornerstone of CSS, defining how elements are rendered in the browser. This lesson covers the crucial components of the box model: content, padding, border, and margin.
-Q: What are the four parts of the CSS box model?
-A:
-1) Content, padding, border, and margin - Correct
-2) Content, border, margin, and size
-3) Margin, border, padding, and pattern
-4) Content, sides, border, and padding
-URLs:
-1. https://www.w3schools.com/css/css_boxmodel.asp
-2. https://developer.mozilla.org/en-US/docs/Web/CSS/box_model
-3. https://www.tutorialspoint.com/css/css_box_model.htm
-4. https://css-tricks.com/the-css-box-model/
-Lesson 5: CSS Positioning
-Overview: This lesson teaches students about CSS positioning. Positioning is a powerful tool in CSS that allows developers to control where and how elements are physically placed on the webpage. This includes static, relative, absolute, and fixed positioning.
-Q: What are the four types of CSS positioning?
-A:
-1) Static, dynamic, absolute, and relative
-2) Static , relative , absolute , and fixed - Correct
-3) Dynamic, fixed, relative, and immovable
-4) Absolute, relative, immovable, and static
-URLs:
-1. https://www.w3schools.com/css/css_positioning.asp
-2. https://developer.mozilla.org/en-US/docs/Web/CSS/position
-3. https://www.tutorialrepublic.com/css-tutorial/css-positioning.php
-4. https://css-tricks.com/almanac/properties/p/position/
-Lesson 6: CSS Flexbox
-Overview: In Lesson 6, we introduce students to CSS Flexbox. Flexbox is a layout model that allows for efficient arrangement of items within container elements. Understanding Flexbox is important for creating flexible and responsive layouts.
-Q: What is the main purpose of CSS Flexbox?
-A:
-1) To provide a more efficient way to resize and distribute space among container items - Correct
-2) To provide a more challenging way to resize items in a container
-3) To make containers more rigid and less flexible
-4) To reduce the size of containers in a layout
-URLs:
-1. https://www.w3schools.com/css/css3_flexbox.asp
-2. https://developer.mozilla.org/en-US/docs/Glossary/Flexbox
-3. https://www.tutorialspoint.com/css/css_flexbox.htm
-4. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-Lesson 7: CSS Grid
-Overview: Lesson 7 exposes learners to CSS Grid. This is a powerful two-dimensional system that's ideal for building complex web layouts. This lesson delves into topics like grid template columns and rows, placement of grid items, and grid gaps.
-Q: How does CSS Grid differ from CSS Flexbox?
-A:
-1) CSS Grid is more focused on content, while Flexbox is more focused on layout
-2) CSS Grid is for desktop layouts, while Flexbox is for mobile layouts
-3) CSS Grid is two-dimensional (rows and columns) while Flexbox is largely one-dimensional (either rows or columns) - Correct
-4) CSS Grid is for responsive design, while Flexbox is for static design
-URLs:
-1. https://www.w3schools.com/css/css_grid.asp
-2. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
-3. https://css-tricks.com/snippets/css/complete-guide-grid/
-4. https://www.tutorialspoint.com/css/css_grid_layout.htm
-Lesson 8: CSS Transitions and Animations
-Overview: Lesson 8 dives into CSS transitions and animations. These properties allow elements to change values over a specified duration, animating almost any aspect of the element. This lesson enhances the capability of learners to create interactive and captivating web experiences.
-Q: What is the difference between CSS transitions and animations?
-A:
-1) Transitions shift from one property value to another, animations do not change property values
-2) Animations shift from one property value to another, transitions do not change property values
-3) CSS transitions provide a way to control animation speed when changing CSS properties, while animations can set multiple points of transition upon different CSS properties - Correct
-4) There is no difference between CSS transitions and animations
-URLs:
-1. https://www.w3schools.com/css/css3_transitions.asp
-2. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions
-3. https://www.tutorialspoint.com/css/css_animation.htm
-4. https://css-tricks.com/almanac/properties/a/animation/
-Lesson 9: CSS Preprocessors
-Overview: In Lesson 9, we introduce CSS Preprocessors, such as Sass and Less. These tools allow developers to use variables, nesting, mixins, and other features that don't exist in pure CSS. This lesson will expose learners to advanced CSS techniques to improve productivity.
-Q: What is an example of a CSS preprocessor?
-A:
-1) JavaScript
-2) Python
-3) Sass - Correct
-4) HTML
-URLs:
-1. https://sass-lang.com/guide
-2. https://developer.mozilla.org/en-US/docs/Glossary/CSS_preprocessor
-3. https://www.tutorialspoint.com/sass/index.htm
-4. https://css-tricks.com/an-introduction-to-sass-syntactically-awesome-stylesheets/
-Lesson 10: Responsive Design and Media Queries
-Overview: The final lesson centers on responsive design and media queries in CSS. Responsive design ensures web layouts look good on all devices, and media queries allow the application of different CSS rules for different device widths. This lesson is essential in helping learners create modern, mobile-friendly web layouts.
-Q: What are CSS media queries used for?
-A:
-1) To apply different styling rules to different devices based on the device's color mode
-2) To detect the user's preferred color scheme and apply styling rules accordingly
-3) To apply different styling rules to different devices based on characteristics like their screen size, resolution, or device orientation - Correct
-4) All of the above
-URLs:
-1. https://www.w3schools.com/css/css_rwd_mediaqueries.asp
-2. https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries
-3. https://www.tutorialspoint.com/css/css_responsive.htm
-4. https://css-tricks.com/css-media-queries/
+# Spanish Lesson 2: Spanish Nouns
+
+## Understanding Spanish Nouns
+```js
+let a = "In this lesson, you will understand how all nouns in Spanish have a gender, masculine or feminine, and this influences the sentence structure.";
+```
+### Challenge
+Challenge: What are the endings of most feminine nouns in Spanish?
+Answers:
+- A: -a
+- B: -o
+- C: -e
+- D: -u
+Correct:
+- A
+
+# Spanish Lesson 3: Spanish Verbs
+
+## Studying Spanish Verbs
+```js
+let a = "This lesson will cover regular verbs in the three conjugations (-ar, -er, -ir) in present tense. You will learn about the structure of Spanish verbs, their forms, the concept of conjugation and how verbs change based on the subject.";
+```
+### Challenge
+Challenge: What is the present tense conjugation of 'comer' (to eat) for 'yo' (I)?
+Answers:
+- A: comero
+- B: cames
+- C: como
+- D: comite
+Correct:
+- C
+
+# Spanish Lesson 4: Adjectives in Spanish
+
+## Understanding Spanish Adjectives
+```js
+let a = "In this lesson, you will focus on how Spanish adjectives agree in gender and number with the nouns they modify, a fundamental rule of Spanish grammar.";
+```
+### Challenge
+Challenge: In Spanish, where do adjectives mostly go in relation to the noun?
+Answers:
+- A: Before the noun
+- B: After the noun
+- C: No particular order
+- D: In the middle of the sentence
+Correct:
+- B
+
+# Spanish Lesson 5: Telling Time in Spanish
+
+## Time in Spanish
+```js
+let a = "In this lesson, you will learn how to read the clock in Spanish, express the time, and how to ask someone what the current time is.";
+```
+### Challenge
+
+Challenge: How do you say '2:30' in Spanish?
+Answers:
+- A: Dos y treinta
+- B: Dos menos treinta
+- C: Dos después treinta
+- D: Dos a treinta
+Correct:
+- A
+
+# Spanish Lesson 6: Spanish Pronouns
+
+## Using Pronouns in Spanish
+```js
+let a = "This lesson will cover subject pronouns – yo, tú, él, ella, etc. – and how they are used in sentences.";
+```
+### Challenge
+Challenge: What is the Spanish subject pronoun for 'we' (feminine)?
+Answers:
+- A: nosotros
+- B: nosotras
+- C: vosotros
+- D: vosotras
+Correct:
+- B
+
+# Spanish Lesson 7: Expressing Likes and Dislikes in Spanish
+
+## Expressing Preferences in Spanish
+```js
+let a = "In this lesson, you'll learn 'gustar' (to like) and how to use this verb to express your likes and dislikes.";
+```
+### Challenge
+Challenge: How do you say 'I like the book' in Spanish?
+Answers:
+- A: Yo gusto el libro
+- B: El libro gusto yo
+- C: Me gusta el libro
+- D: Libro me gusta
+Correct:
+- C
+
+# Spanish Lesson 8: Asking Questions in Spanish
+
+## Forming Questions in Spanish
+```js
+let a = "One important part of learning any language is mastering the art of asking questions.";
+```
+### Challenge
+Challenge: How do you say 'Where is the bathroom?' in Spanish?
+Answers:
+- A: Cuando es el baño?
+- B: Que es el baño?
+- C: Donde esta el baño?
+- D: Quien es el baño?
+Correct:
+- C
+
+# Spanish Lesson 9: Spanish Prepositions
+
+## Applying Prepositions in Spanish
+```js
+let a = "This lesson will introduce you to common Spanish prepositions such as 'en', 'de', 'a', and 'con', and show you how they work in sentences.";
+```
+### Challenge
+Challenge: Which preposition typically indicates location in Spanish?
+Answers:
+- A: de
+- B: en
+- C: a
+- D: y
+Correct:
+- B
+
+# Spanish Lesson 10: Basic Spanish Conversation
+
+## Engaging in Conversation in Spanish
+```js
+let a = "Now that you've learned basic Spanish grammar, this lesson will put those tools into practice by learning to engage in basic Spanish conversation.";
+```
+### Challenge
+Challenge: How would you ask someone's name in Spanish?
+Answers:
+- A: ¿Cómo te llamas?
+- B: ¿Dónde te llamas?
+- C: ¿Por qué te llamas?
+- D: ¿Cuándo te llamas?
+Correct:
+- A
