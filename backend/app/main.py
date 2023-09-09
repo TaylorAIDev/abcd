@@ -3,6 +3,7 @@ from fastapi import FastAPI
 from pathlib import Path
 import uvicorn
 from mangum import Mangum
+import mistletoe
 import openai
 
 # app config
@@ -28,18 +29,21 @@ async def home():
 
 
 def load_lessons():
+    """Temp data"""
     files = Path("./data").glob("*.md")
+    for file in files:
+        with open(file, "r") as fin:
+            rendered = mistletoe.markdown(fin)
+            # TODO: parse markdown, to JSON
 
 
 @app.get("/lessons")
-async def lessons():
+async def read_lessons():
     """Get lessons list."""
     lessons = []
     return {"status": "OK"}
 
 
-
-# AWS
 handler = Mangum(app)
 
 
